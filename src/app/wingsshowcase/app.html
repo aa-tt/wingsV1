@@ -1,0 +1,24 @@
+<h2>
+  {{title}}
+</h2>
+<div>
+      <span>Anunay</span>
+      <div>
+        <a [routerLink]="['']">&#9679; Home</a>
+        <a [routerLink]="['/formvalidation']">&#9679; Form Validation</a>
+        <a [routerLink]="['/gridexim']">&#9679; Grid Export import</a>
+      </div>
+
+      <span>Chitra</span>
+      <div>
+        <a [routerLink]="['/a']">&#9679; A</a>
+        <a [routerLink]="['/b']">&#9679; B</a>
+      </div>
+
+  <div class="layout-mask" *ngIf="menuActive">
+  </div>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
